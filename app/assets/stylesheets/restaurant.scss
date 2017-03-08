@@ -1,3 +1,17 @@
 // Place all the styles related to the Restaurant controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+a {
+  text-decoration: none;
+  background-color: black;
+}
+// How do I style the link since they are link_to?
+
+.banner {
+  background: url("http://placehold.it/350x150")
+  display: flex;
+  justify-content: center;
+  background-color: black;
+
+}
