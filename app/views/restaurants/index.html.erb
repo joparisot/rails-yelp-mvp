@@ -1,14 +1,21 @@
 <div class="banner">
   <h1>List of all restaurants!</h1>
-  <%= link_to "Add a new restaurant", new_restaurant_path, class: "btn btn-primary" %>
+  <%= link_to "Add a new restaurant", new_restaurant_path, class: "btn btn-primary btn-main" %>
 </div>
 
-<% @restaurants.each do |restaurant| %>
-  <h1><%= link_to restaurant.name, restaurant_path(restaurant) %></h1>
-  <ul>
-    <li>address: <%= restaurant.address %></li>
-    <li>Food type: <%= restaurant.category %></li>
-  </ul>
-  <%= link_to "Add a review", restaurant_path(restaurant), class: "btn btn-default" %>
-<% end %>
+<div class="container">
+  <div class="row">
+    <% @restaurants.each do |restaurant| %>
+      <div class="card">
+        <h1><%= link_to restaurant.name, restaurant_path(restaurant) %></h1>
+        <ul>
+          <li>address: <%= restaurant.address %></li>
+          <li>Food type: <%= restaurant.category %></li>
+        </ul>
+        <%= link_to "Add a review", restaurant_path(restaurant), class: "btn btn-default" %>
+      </div>
+    <% end %>
+  </div>
+</div>
+
 

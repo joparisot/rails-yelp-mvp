@@ -4,14 +4,17 @@
 
 a {
   text-decoration: none;
-  background-color: black;
 }
 // How do I style the link since they are link_to?
 
 .banner {
-  background: url("http://placehold.it/350x150")
+  background: url("http://placehold.it/350x150");
   display: flex;
   justify-content: center;
-  background-color: black;
+  align-items: center;
+  height: 300px;
+}
 
+.btn-main {
+  height: 40px;
 }
