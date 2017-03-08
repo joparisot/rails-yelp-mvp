@@ -1,0 +1,14 @@
+
+<h1><%= @restaurant.name %></h1>
+<ul>
+  <li>address: <%= @restaurant.address %></li>
+  <li>Food type: <%= @restaurant.category %></li>
+</ul>
+<% @restaurant.reviews.each do |review| %>
+  <h3><%= review.rating %> / 5</h3>
+  <%= review.content %>
+<% end %>
+
+<p>
+<%= link_to "Back home", restaurants_path, class: "btn btn-primary" %>
+</p>
